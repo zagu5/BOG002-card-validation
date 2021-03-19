@@ -1,0 +1,407 @@
+.validator {
+/* Validator */
+
+position: relative;
+width: 414px;
+height: 896px;
+
+background: #ECEBEB;
+}
+
+.maskGroup {
+/* Mask Group */
+
+position: absolute;
+width: 414px;
+height: 500px;
+left: 0px;
+top: 0px;
+}
+
+.rectangle5{
+/* Rectangle 5 */
+
+position: absolute;
+width: 414px;
+height: 500px;
+left: 0px;
+top: 0px;
+
+background: #C4C4C4;
+}
+
+.image{
+/* OIP 1 */
+
+position: absolute;
+width: 490px;
+height: 453px;
+left: -36px;
+top: 0px;
+
+background: url(OIP.jpg);
+border-radius: 15px;
+}
+
+.contenedor{
+/* Rectangle 1 */
+
+position: absolute;
+width: 414px;
+height: 500px;
+left: 0px;
+top: 396px;
+
+
+
+/* ligth */
+background: #FFFFFF;
+border-radius: 60px 60px 0px 0px;
+}
+
+.text1{
+/* Validador de tarjeta de crédito */
+
+position: absolute;
+width: 350px;
+height: 30px;
+left: 39px;
+top: 438px;
+
+/* Title Bold */
+font-family: Mulish;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 30px;
+display: flex;
+align-items: center;
+
+color: #000000;
+
+}
+
+.text2 {
+/* Ingresa los siguientes datos: */
+
+position: absolute;
+width: 350px;
+height: 33px;
+left: 48px;
+top: 468px;
+
+/* Lead Light */
+font-family: Mulish;
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 23px;
+display: flex;
+align-items: center;
+
+/* Muted */
+color: #9E9E9E;
+
+
+}
+
+.numberCard{
+/* Input */
+
+position: absolute;
+width: 340px;
+height: 60px;
+left: 39px;
+top: 496px;
+
+
+
+/* Rectangle 2 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* Grey */
+background: #F5F5F5;
+border-radius: 10px;
+
+}
+.text3{
+/* Ingresa número de tarjeta */
+
+position: absolute;
+left: 5.88%;
+right: 38.82%;
+top: 33.33%;
+bottom: 33.33%;
+
+/* Paragraph light */
+font-family: Mulish;
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+/* Muted */
+color: #9E9E9E;
+
+}
+
+/* eye-off-sharp */
+
+position: absolute;
+width: 25px;
+height: 25px;
+left: 295px;
+top: 20px;
+
+/* Vector */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 12.5%;
+bottom: 12.5%;
+
+/* Muted */
+background: #9E9E9E;
+
+/* Vector */
+
+position: absolute;
+left: 3.12%;
+right: 3.12%;
+top: 18.75%;
+bottom: 18.75%;
+
+/* Muted */
+background: #9E9E9E;
+
+
+/* Input */
+
+position: absolute;
+width: 340px;
+height: 60px;
+left: 39px;
+top: 565px;
+
+
+
+/* Rectangle 2 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* Grey */
+background: #F5F5F5;
+border-radius: 10px;
+
+
+/* Ingresa Nombre y Apellido */
+
+position: absolute;
+left: 5.88%;
+right: 37.35%;
+top: 33.33%;
+bottom: 33.33%;
+
+/* Paragraph light */
+font-family: Mulish;
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+/* Muted */
+color: #9E9E9E;
+
+
+
+/* Input */
+
+position: absolute;
+width: 340px;
+height: 60px;
+left: 39px;
+top: 634px;
+
+
+
+/* Rectangle 2 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* Grey */
+background: #F5F5F5;
+border-radius: 10px;
+
+
+/* Ingresa tu numero de tarjeta */
+
+position: absolute;
+left: 5.88%;
+right: 31.47%;
+top: 33.33%;
+bottom: 33.33%;
+
+/* Paragraph light */
+font-family: Mulish;
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+/* Muted */
+color: #9E9E9E;
+
+
+
+/* 2021 ZAGUG, Todos los derechos reservados */
+
+position: absolute;
+width: 350px;
+height: 40px;
+left: 39px;
+top: 856px;
+
+/* Footer Text */
+font-family: Mulish;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+display: flex;
+align-items: center;
+
+
+
+/* Footer */
+
+position: absolute;
+width: 340px;
+height: 60px;
+left: 39px;
+top: 796px;
+
+
+
+/* Rectangle 4 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* ligth */
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 30.88%;
+right: 61.4%;
+top: 28.33%;
+bottom: 27.92%;
+
+background: #000000;
+
+
+/* Vector */
+
+position: absolute;
+left: 32.81%;
+right: 62.68%;
+top: 35.63%;
+bottom: 38.85%;
+
+background: #000000;
+
+
+/* Vector */
+
+position: absolute;
+left: 44.12%;
+right: 48.16%;
+top: 28.33%;
+bottom: 28.18%;
+
+background: #000000;
+
+
+/* Vector */
+
+position: absolute;
+left: 56.47%;
+right: 35.26%;
+top: 33.33%;
+bottom: 29.17%;
+
+background: #000000;
+
+
+/* Buttom */
+
+position: absolute;
+width: 340px;
+height: 60px;
+left: 39px;
+top: 721px;
+
+
+
+/* Rectangle 3 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* Primary */
+background: linear-gradient(180deg, #2094FE 0%, #007DED 67.71%);
+border-radius: 10px;
+
+
+/* Validar Tarjeta */
+
+position: absolute;
+left: 30.29%;
+right: 36.47%;
+top: 33.33%;
+bottom: 33.33%;
+
+/* paragraph bold */
+font-family: Mulish;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+/* ligth */
+color: #FFFFFF;
+
