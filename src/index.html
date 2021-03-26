@@ -3,49 +3,110 @@
   <head>
     <!--<meta charset="utf-8" content="width-device-width, user-scalable-no">-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Tarjeta de crédito válida</title>
+    
+    <title>Validador de tarjeta de Credito</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet"> 
-  </head>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet"> 
+    </head>
   <body>
-    <header> 
-     
+    <header>
+      <h1>VALIDADOR DE TARJETA DE CREDITO</h1>
     </header>
     <main>
-      <div class="validator">
-        <div class="maskGroup">
-          <div class = "rectangle5">
-            <div class="image">
-            <img src="/src/image1.png" alt="imagen1">
+      <div class="contenedor">
+
+        <!-- Tarjeta -->
+        <section class="tarjeta" id="tarjeta">
+          <div class="delantera">
+            <div class="logo-marca" id="logo-marca">
+              <!-- <img src="img/logos/visa.png" alt=""> -->
+            </div>
+            <img src="img/chip-tarjeta.png" class="chip" alt="">
+            <div class="datos">
+              <div class="grupo" id="numero">
+                <p class="label">Número Tarjeta</p>
+                <p class="numero">#### #### #### ####</p>
+              </div>
+              <div class="flexbox">
+                <div class="grupo" id="nombre">
+                  <p class="label">Nombre Tarjeta</p>
+                  <p class="nombre"></p>
+                </div>
+    
+                <div class="grupo" id="expiracion">
+                  <p class="label">Expiracion</p>
+                  <p class="expiracion"><span class="mes">MM</span> / <span class="year">AA</span></p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="contenedor">
-            <div class="text1">Validador de tarjeta de credito</div>
-            <div class="text2">Ingresa los siguientes datos</div>
-
-            <div class="numbercard">
-               <input type="text" id="creditCardNumber" class="text3">
-              <h1>Ingresa numero de tarjeta</h1>
-              <div class="vector"></div>
-             
-             
+    
+          <div class="trasera">
+            <div class="barra-magnetica"></div>
+            <div class="datos">
+              <div class="grupo" id="firma">
+                <p class="label">Firma</p>
+                <div class="firma"><p></p></div>
+              </div>
+              <div class="grupo" id="ccv">
+                <p class="label">CCV</p>
+                <p class="ccv"></p>
+              </div>
+            </div>
+            <p class="leyenda">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus exercitationem, voluptates illo.</p>
+            <a href="#" class="link-banco">www.tubanco.com</a> 
+          </div>
+        </section>
+    
+        <!-- Contenedor Boton Abrir Formulario -->
+        <div class="contenedor-btn">
+          <button class="btn-abrir-formulario" id="btn-abrir-formulario">
+            <i class="fas fa-plus"></i>
+          </button>
+        </div>
+    
+        <!-- Formulario -->
+        <form action="" id="formulario-tarjeta" class="formulario-tarjeta">
+          <div class="grupo">
+            <label for="inputNumero">Número Tarjeta</label>
+            <input type="text" id="inputNumero" maxlength="19" autocomplete="off">
+          </div>
+          <div class="grupo">
+            <label for="inputNombre">Nombre</label>
+            <input type="text" id="inputNombre" maxlength="19" autocomplete="off">
+          </div>
+          <div class="flexbox">
+            <div class="grupo expira">
+              <label for="selectMes">Expiracion</label>
+              <div class="flexbox">
+                <div class="grupo-select">
+                  <select name="mes" id="selectMes">
+                    <option disabled selected>Mes</option>
+                  </select>
+                  <i class="fas fa-angle-down"></i>
+                </div>
+                <div class="grupo-select">
+                  <select name="year" id="selectYear">
+                    <option disabled selected>Año</option>
+                  </select>
+                  <i class="fas fa-angle-down"></i>
+                </div>
+              </div>
+            </div>
+    
+            <div class="grupo ccv">
+              <label for="inputCCV">CCV</label>
+              <input type="text" id="inputCCV" maxlength="3">
             </div>
           </div>
-
-         
-            
-          
-
-        </div>
-        
-       
-
-        </div>
+          <button type="submit" class="btn-enviar">Validar</button>
+        </form>
       </div>
     </main>
     <footer>
-
+      <p> Copyright © 2021</p>
+      <small>ZURISADAI AGUDELO GARCIA </small>
     </footer>
     <script src="index.js" type="module"></script>
   </body>
