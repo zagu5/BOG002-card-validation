@@ -1,407 +1,308 @@
-.validator {
-/* Validator */
-
-position: relative;
-width: 414px;
-height: 896px;
-
-background: #ECEBEB;
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
-.maskGroup {
-/* Mask Group */
-
-position: absolute;
-width: 414px;
-height: 500px;
-left: 0px;
-top: 0px;
+body {
+	background: silver;
+	font-family: 'Ubuntu', sans-serif;
+	
+}
+h1 {
+	text-align: center;
+	color: #010713;
 }
 
-.rectangle5{
-/* Rectangle 5 */
-
-position: absolute;
-width: 414px;
-height: 500px;
-left: 0px;
-top: 0px;
-
-background: #C4C4C4;
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	padding: 40px 20px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-.image{
-/* OIP 1 */
-
-position: absolute;
-width: 490px;
-height: 453px;
-left: -36px;
-top: 0px;
-
-background: url(OIP.jpg);
-border-radius: 15px;
+/* -- estilos generales de la tarjeta delantera y trasera--*/
+.tarjeta {
+	width: 100%;
+	max-width: 550px;
+	position: relative;
+	color: #fff;
+	transition: .3s ease all;
+	transform: rotateY(0deg);
+	transform-style: preserve-3d;
+	cursor: pointer;
+	z-index: 2;
 }
 
-.contenedor{
-/* Rectangle 1 */
-
-position: absolute;
-width: 414px;
-height: 500px;
-left: 0px;
-top: 396px;
-
-
-
-/* ligth */
-background: #FFFFFF;
-border-radius: 60px 60px 0px 0px;
+.tarjeta.active {
+	transform: rotateY(180deg);
 }
 
-.text1{
-/* Validador de tarjeta de crédito */
-
-position: absolute;
-width: 350px;
-height: 30px;
-left: 39px;
-top: 438px;
-
-/* Title Bold */
-font-family: Mulish;
-font-style: normal;
-font-weight: bold;
-font-size: 24px;
-line-height: 30px;
-display: flex;
-align-items: center;
-
-color: #000000;
-
+.tarjeta > div {
+	padding: 30px;
+	border-radius: 15px;
+	min-height: 315px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	box-shadow: 0 10px 10px 0 rgba(90,116,148,0.3);
 }
 
-.text2 {
-/* Ingresa los siguientes datos: */
+/* -- Tarjeta Delantera -*/
 
-position: absolute;
-width: 350px;
-height: 33px;
-left: 48px;
-top: 468px;
-
-/* Lead Light */
-font-family: Mulish;
-font-style: normal;
-font-weight: 300;
-font-size: 18px;
-line-height: 23px;
-display: flex;
-align-items: center;
-
-/* Muted */
-color: #9E9E9E;
-
-
+.tarjeta .delantera {
+	width: 100%;
+	background: url(../img/creditCard/tc1.jpg);
+	background-size: cover;
 }
 
-.numberCard{
-/* Input */
-
-position: absolute;
-width: 340px;
-height: 60px;
-left: 39px;
-top: 496px;
-
-
-
-/* Rectangle 2 */
-
-position: absolute;
-left: 0%;
-right: 0%;
-top: 0%;
-bottom: 0%;
-
-/* Grey */
-background: #F5F5F5;
-border-radius: 10px;
-
-}
-.text3{
-/* Ingresa número de tarjeta */
-
-position: absolute;
-left: 5.88%;
-right: 38.82%;
-top: 33.33%;
-bottom: 33.33%;
-
-/* Paragraph light */
-font-family: Mulish;
-font-style: normal;
-font-weight: 300;
-font-size: 16px;
-line-height: 20px;
-/* identical to box height */
-display: flex;
-align-items: center;
-
-/* Muted */
-color: #9E9E9E;
-
+.delantera .logo-marca {
+	text-align: right;
+	min-height: 50px;
 }
 
-/* eye-off-sharp */
-
-position: absolute;
-width: 25px;
-height: 25px;
-left: 295px;
-top: 20px;
-
-/* Vector */
-
-position: absolute;
-left: 12.5%;
-right: 12.5%;
-top: 12.5%;
-bottom: 12.5%;
-
-/* Muted */
-background: #9E9E9E;
-
-/* Vector */
-
-position: absolute;
-left: 3.12%;
-right: 3.12%;
-top: 18.75%;
-bottom: 18.75%;
-
-/* Muted */
-background: #9E9E9E;
-
-
-/* Input */
-
-position: absolute;
-width: 340px;
-height: 60px;
-left: 39px;
-top: 565px;
-
-
-
-/* Rectangle 2 */
-
-position: absolute;
-left: 0%;
-right: 0%;
-top: 0%;
-bottom: 0%;
-
-/* Grey */
-background: #F5F5F5;
-border-radius: 10px;
-
-
-/* Ingresa Nombre y Apellido */
-
-position: absolute;
-left: 5.88%;
-right: 37.35%;
-top: 33.33%;
-bottom: 33.33%;
-
-/* Paragraph light */
-font-family: Mulish;
-font-style: normal;
-font-weight: 300;
-font-size: 16px;
-line-height: 20px;
-/* identical to box height */
-display: flex;
-align-items: center;
-
-/* Muted */
-color: #9E9E9E;
-
-
-
-/* Input */
-
-position: absolute;
-width: 340px;
-height: 60px;
-left: 39px;
-top: 634px;
-
-
-
-/* Rectangle 2 */
-
-position: absolute;
-left: 0%;
-right: 0%;
-top: 0%;
-bottom: 0%;
-
-/* Grey */
-background: #F5F5F5;
-border-radius: 10px;
-
-
-/* Ingresa tu numero de tarjeta */
-
-position: absolute;
-left: 5.88%;
-right: 31.47%;
-top: 33.33%;
-bottom: 33.33%;
-
-/* Paragraph light */
-font-family: Mulish;
-font-style: normal;
-font-weight: 300;
-font-size: 16px;
-line-height: 20px;
-/* identical to box height */
-display: flex;
-align-items: center;
-
-/* Muted */
-color: #9E9E9E;
-
-
-
-/* 2021 ZAGUG, Todos los derechos reservados */
-
-position: absolute;
-width: 350px;
-height: 40px;
-left: 39px;
-top: 856px;
-
-/* Footer Text */
-font-family: Mulish;
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 20px;
-display: flex;
-align-items: center;
-
-
-
-/* Footer */
-
-position: absolute;
-width: 340px;
-height: 60px;
-left: 39px;
-top: 796px;
-
-
-
-/* Rectangle 4 */
-
-position: absolute;
-left: 0%;
-right: 0%;
-top: 0%;
-bottom: 0%;
-
-/* ligth */
-background: #FFFFFF;
-
-
-/* Vector */
-
-position: absolute;
-left: 30.88%;
-right: 61.4%;
-top: 28.33%;
-bottom: 27.92%;
-
-background: #000000;
-
-
-/* Vector */
-
-position: absolute;
-left: 32.81%;
-right: 62.68%;
-top: 35.63%;
-bottom: 38.85%;
-
-background: #000000;
-
-
-/* Vector */
-
-position: absolute;
-left: 44.12%;
-right: 48.16%;
-top: 28.33%;
-bottom: 28.18%;
-
-background: #000000;
-
-
-/* Vector */
-
-position: absolute;
-left: 56.47%;
-right: 35.26%;
-top: 33.33%;
-bottom: 29.17%;
-
-background: #000000;
-
-
-/* Buttom */
-
-position: absolute;
-width: 340px;
-height: 60px;
-left: 39px;
-top: 721px;
-
-
-
-/* Rectangle 3 */
-
-position: absolute;
-left: 0%;
-right: 0%;
-top: 0%;
-bottom: 0%;
-
-/* Primary */
-background: linear-gradient(180deg, #2094FE 0%, #007DED 67.71%);
-border-radius: 10px;
-
-
-/* Validar Tarjeta */
-
-position: absolute;
-left: 30.29%;
-right: 36.47%;
-top: 33.33%;
-bottom: 33.33%;
-
-/* paragraph bold */
-font-family: Mulish;
-font-style: normal;
-font-weight: bold;
-font-size: 16px;
-line-height: 20px;
-/* identical to box height */
-display: flex;
-align-items: center;
-
-/* ligth */
-color: #FFFFFF;
-
+.delantera .logo-marca img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	max-width: 80px;
+}
+
+.delantera .chip {
+	width: 100%;
+	max-width: 50px;
+	margin-bottom: 20px;
+}
+
+.delantera .grupo .label {
+	font-size: 16px;
+	color: #7d8994;
+	margin-bottom: 5px;
+}
+
+.delantera .grupo .numero,
+.delantera .grupo .nombre,
+.delantera .grupo .expiracion {
+	color: #fff;
+	font-size: 22px;
+	text-transform: uppercase;
+}
+
+.delantera .flexbox {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+/* --Tarjeta rasera--*/
+.trasera {
+	background: url(../img/bg-tarjeta/bg-tarjeta-02.jpg);
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	transform: rotateY(180deg);
+	backface-visibility: hidden;
+}
+
+.trasera .barra-magnetica {
+	height: 40px;
+	background: #000;
+	width: 100%;
+	position: absolute;
+	top: 30px;
+	left: 0;
+}
+
+.trasera .datos {
+	margin-top: 60px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.trasera .datos p {
+	margin-bottom: 5px;
+}
+
+.trasera .datos #firma {
+	width: 70%;
+}
+
+.trasera .datos #firma .firma {
+	height: 40px;
+	background: repeating-linear-gradient(skyblue 0, skyblue 5px, orange 5px, orange 10px);
+}
+
+.trasera .datos #firma .firma p {
+	line-height: 40px;
+	font-family: 'Liu Jian Mao Cao', cursive;
+	color: #000;
+	font-size: 30px;
+	padding: 0 10px;
+	text-transform: capitalize;
+}
+
+.trasera .datos #ccv {
+	width: 20%;
+}
+
+.trasera .datos #ccv .ccv {
+	background: #fff;
+	height: 40px;
+	color: #000;
+	padding: 10px;
+	text-align: center;
+}
+
+.trasera .leyenda {
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.trasera .link-banco {
+	font-size: 14px;
+	color: #fff;
+}
+
+/* ---------- Contenedor Boton ----------*/
+.contenedor-btn .btn-abrir-formulario {
+	width: 50px;
+	height: 50px;
+	font-size: 20px;
+	line-height: 20px;
+	background: #2364d2;
+	color: #fff;
+	position: relative;
+	top: -25px;
+	z-index: 3;
+	border-radius: 100%;
+	box-shadow: -5px 4px 8px rgba(24,56,182,0.4);
+	padding: 5px;
+	transition: all .2s ease;
+	border: none;
+	cursor: pointer;
+}
+
+.contenedor-btn .btn-abrir-formulario:hover {
+	background: #1850b1;
+}
+
+.contenedor-btn .btn-abrir-formulario.active {
+	transform: rotate(45deg);
+}
+
+/* ---------- Formulario Tarjeta ----------*/
+.formulario-tarjeta {
+	background: #fff;
+	width: 100%;
+	max-width: 700px;
+	padding: 150px 30px 30px 30px;
+	border-radius: 10px;
+	position: relative;
+	top: -150px;
+	z-index: 1;
+	clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+	transition: clip-path .3s ease-out;
+}
+
+.formulario-tarjeta.active {
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.formulario-tarjeta label {
+	display: block;
+	color: #7d8994;
+	margin-bottom: 5px;
+	font-size: 16px;
+}
+
+.formulario-tarjeta input,
+.formulario-tarjeta select,
+.btn-enviar {
+	border: 2px solid #CED6E0;
+	font-size: 18px;
+	height: 50px;
+	width: 100%;
+	padding: 5px 12px;
+	transition: .3s ease all;
+	border-radius: 5px;
+}
+
+.formulario-tarjeta input:hover,
+.formulario-tarjeta select:hover {
+	border: 2px solid #93BDED;
+}
+
+.formulario-tarjeta input:focus,
+.formulario-tarjeta select:focus {
+	outline: rgb(4,4,4);
+	box-shadow: 1px 7px 10px -5px rgba(90,116,148,0.3);
+}
+
+.formulario-tarjeta input {
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+.formulario-tarjeta .flexbox {
+	display: flex;
+	justify-content: space-between;
+}
+
+.formulario-tarjeta .expira {
+	width: 100%;
+}
+
+.formulario-tarjeta .ccv {
+	min-width: 100px;
+}
+
+.formulario-tarjeta .grupo-select {
+	width: 100%;
+	margin-right: 15px;
+	position: relative;
+}
+
+.formulario-tarjeta select {
+	-webkit-appearance: none;
+}
+
+.formulario-tarjeta .grupo-select i {
+	position: absolute;
+	color: #CED6E0;
+	top: 18px;
+	right: 15px;
+	transition: .3s ease all;
+}
+
+.formulario-tarjeta .grupo-select:hover i {
+	color: #93bfed;
+}
+
+.formulario-tarjeta .btn-enviar {
+	border: none;
+	padding: 10px;
+	font-size: 22px;
+	color: #fff;
+	background: #2364d2;
+	box-shadow: 2px 2px 10px 0px rgba(0,85,212,0.4);
+	cursor: pointer;
+}
+
+.formulario-tarjeta .btn-enviar:hover {
+	background: #1850b1;
+}
+
+footer {
+	background: #dddee1;
+	padding: 5vh 0;
+	text-align: center;
+	position: relative;
+  }
+  
+  small {
+	opacity: .5;
+	font-weight: 300;
+  }
