@@ -1,29 +1,23 @@
 const validator = {
-  // ...Función que recorre los numeros de la tarjeta de manera inversa 
-  isValid: 
- }
+  // ...Funcion validar tarjeta de credito
+  isValid:  function creditCardNumber (value) {
+    //funcion que acepta solo digitos, guiones o espacios
+    if (/[^0-9-\s]+/.test(value))
+      return false;
+    
+       
+    let sum = 0, 
+        numMult = false;
+        //value = value.replace(/\D/g, ""); //reemplace todo lo que no es digito o punto por un espacio
+    for (let i = value.length - 1; i >= 0; i--) {
+        let string = value.charAt(i), //El charAt() método devuelve el carácter en el índice especificado de una cadena. 
+        numEnt = parseInt(string, 10); //parseInt convierte string a un entero
+        if (numMult && (numEnt *= 2) > 16) numEnt -= 9; sum +=  numEnt; numMult = !numMult;
+    }
+    return (sum % 10) == 0;
+  } 
 
- /* const creditNumberCardReverse = function (array) {
-    var creditNumberCard = [1,2,3,4,5,6,7,8,9];
-    let newArray = [];
-    let size = array.length;//9
-    let lastPosition = size-1;
   
-    for ( var i= lastPosition; i>=0; i--){
-    //agrega los elementos del array pero recorriendolo al reves
-    newArray.push(array[i]);
-
-  }
-  return newArray;
-
-}
-}
-  //invoca la funcion numberCardReverse pasando como parámetro numberCard 
-  console.log(creditNumberCard);
-  console.log(creditNumberCardReverse(creditNumberCard));
-*/
-
-
-
+};
 
 export default validator;
